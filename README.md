@@ -1,11 +1,11 @@
 # flop
 
-[![GoDoc](https://godoc.org/github.com/homedepot/flop?status.svg)](https://godoc.org/github.com/homedepot/flop)
+[![GoDoc](https://godoc.org/github.com/riptano/flop?status.svg)](https://godoc.org/github.com/riptano/flop)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)
-[![Go Report Card](https://goreportcard.com/badge/github.com/homedepot/flop)](https://goreportcard.com/report/github.com/homedepot/flop)
+[![Go Report Card](https://goreportcard.com/badge/github.com/riptano/flop)](https://goreportcard.com/report/github.com/riptano/flop)
 
-<img src="https://github.com/homedepot/flop/raw/master/doc/logo.png" width="200" title="design based on original gopher by Renee French">
+<img src="https://github.com/riptano/flop/raw/master/doc/logo.png" width="200" title="design based on original gopher by Renee French">
 
 ----
 
@@ -20,7 +20,7 @@ created inside the directory. This behavior must be explicitly defined in flop b
 AppendNameToPath, otherwise an error will be returned.
 
 ```BASH
-go get -u github.com/homedepot/flop
+go get -u github.com/riptano/flop
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ err := flop.SimpleCopy("src_path", "dst_path")
 handle(err)
 ```
 
-Advanced file copy with [options](https://pkg.go.dev/github.com/homedepot/flop?tab=doc#Options).
+Advanced file copy with [options](https://pkg.go.dev/github.com/riptano/flop?tab=doc#Options).
 
 ```go
 options := flop.Options{
@@ -51,7 +51,7 @@ can help expose the behavior, or aid in debugging if you are generous enough to 
 ```go
 // the logger just takes a string so format your favorite logger to accept one
 import (
-	"github.com/homedepot/flop"
+	"github.com/riptano/flop"
 	"github.com/rs/zerolog"
 	zlog "github.com/rs/zerolog/log"
 	llog "github.com/sirupsen/logrus"
